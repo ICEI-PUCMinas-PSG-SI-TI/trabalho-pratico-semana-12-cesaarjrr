@@ -177,7 +177,15 @@
       "descricao": "Em Los Angeles, a atriz iniciante Mia e o pianista de jazz Sebastian se encontram enquanto perseguem seus sonhos. Entre audições frustradas e shows em bares, eles se apaixonam e se inspiram mutuamente. Mas, à medida que suas carreiras começam a decolar, o amor entre eles é posto à prova pelos sacrifícios que cada um precisa fazer. 'La La Land' é uma celebração da música, do cinema clássico e das escolhas que moldam nossas vidas."
     },
     {
-      "id": "9488"
+      "id": "a289",
+      "titulo": "Teste",
+      "ano": 2000,
+      "genero": "Terror",
+      "diretor": "Casa",
+      "cast": "Casa",
+      "descricao": "Casa",
+      "poster": "https://via.placeholder.com/300x450",
+      "trailer": "https://www.youtube.com/embed/yT9kjtk4mJw?si=nRVc3M3im188eiKx"
     }
   ]
 }

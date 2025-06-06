@@ -18,7 +18,7 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 <img src="delete.png" alt="delete">
 **Print da aba NETWORK com requisições Fetch/XHR de POST**
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img src="fetchxhr" alt="fetch/xhr">
 
 ## **Orientações Gerais**
 
