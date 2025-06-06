@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Filmes do Cesar</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center">
+                    <img src="imgs/clack.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                    Cesar :D
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastrofilme.html">Cadastrar Filmes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>   
+
+    <main class="container mt-5">
+        <h1>Detalhes do Filme</h1>
+        <div class="container mt-4">
+            <div id="detalhefilme"></div>
+        </div>
+    </main>
+
+    <footer class="text-center bg-dark text-white py-4 border-top mt-5 pt-3">
+        <div class="container">
+            <h5 class="fw-bold">Informações do Aluno</h5>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <h6 class="text-primary">Sobre</h6>
+                    <p>Meu site sobre filmes :D</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-info">Autoria</h6>
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="imgs/eu.jpg" alt="eu" class="rounded-circle me-2" width="80" height="80">
+                        <div>
+                            <strong>Aluno:</strong> Cesar Júnior<br>
+                            <strong>Curso:</strong> Sistemas da Informação<br>
+                            <strong>Turma:</strong> Manhã
+                        </div>
+                    </div>
+                    <p class="text-info fw-bold">Redes Sociais:</p>
+                    <a href="https://www.facebook.com/roberto.dino.12720"><i class="bi bi-facebook fs-4 me-2"></i></a>
+                    <a href="https://github.com/cesaarjrr"><i class="bi bi-github fs-4 me-2"></i></a>
+                    <a href="https://x.com/cesaarjrr"><i class="bi bi-twitter fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const API_URL = "http://localhost:3000/filmes";
+
+        function adicionarAosFavoritos(idFilme) {
+            let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+
+            if (favoritos.includes(idFilme)) {
+                alert("Este filme já está nos favoritos!");
+                return;
+            }
+
+            favoritos.push(idFilme);
+            localStorage.setItem('favoritos', JSON.stringify(favoritos));
+
+            alert("Filme adicionado aos favoritos!");
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const filmeid = urlParams.get('id');
+
+            fetch(`${API_URL}/${filmeid}`)
+                .then(response => response.json())
+                .then(filme => {
+                    const movieDetailDiv = document.getElementById('detalhefilme');
+
+                    movieDetailDiv.innerHTML = `
+                        <h2>${filme.titulo} (${filme.ano})</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="${filme.poster}" alt="${filme.titulo}" class="img-fluid mb-3" style="width: 100%; height: auto; object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <p><strong>Gênero:</strong> ${filme.genero}</p>
+                                <p><strong>Descrição:</strong> ${filme.descricao}</p>
+                                <p><strong>Direção:</strong> ${filme.diretor}</p>
+                                <p><strong>Elenco:</strong> ${filme.cast}</p>
+                                <button class="botaofavorito" onclick="adicionarAosFavoritos(${filme.id})">Adicionar aos Favoritos</button>
+                            </div>
+                        </div>
+
+                        ${filme.trailer ? `
+                        <div class="mt-4">
+                            <h5>Trailer</h5>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="${filme.trailer}" title="Trailer de ${filme.titulo}" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        ` : ''}
+                    `;
+                })
+                .catch(error => {
+                    document.getElementById('detalhefilme').innerHTML = `<p class="text-danger">Erro ao carregar o filme.</p>`;
+                    console.error("Erro:", error);
+                });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

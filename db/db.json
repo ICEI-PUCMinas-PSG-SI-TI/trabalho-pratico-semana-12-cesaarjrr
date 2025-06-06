@@ -1,18 +1,180 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "titulo": "Anora",
+      "ano": "2025",
+      "genero": "Drama",
+      "poster": "imgs/anora.jpg",
+      "descricao": "Em Nova York, a jovem stripper Anora conhece o filho de um oligarca russo. Eles se envolvem em um romance turbulento, enquanto Anora tenta escapar de sua vida passada e reconstruir sua identidade. O filme explora temas de amor, traição e redenção.",
+      "trailer": "https://www.youtube.com/embed/p1HxTmV5i7c?si=4qgGi-n_y7WeHVow",
+      "diretor": "Sean Baker",
+      "cast": "Mikey Madison, Mark Eydelshteyn, Yura Borisov, Karren Karagulian, Vache Tovmasyan, Aleksei Serebryakov, Darya Ekamasova, Lindsey Normington, Ivy Wolk, Luna Sofía Miranda, Alena Gurevich"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "titulo": "Conclave",
+      "ano": 2025,
+      "genero": "Drama",
+      "poster": "imgs/conclave.jpg",
+      "descricao": "Com a morte do Papa, o cardeal Lawrence reúne um grupo de sacerdotes para eleger seu sucessor. Cercado por líderes do mundo todo nos corredores do Vaticano, ele descobre uma trilha de segredos profundos que podem abalar a própria fundação da Igreja.",
+      "diretor": "Roland Joffé",
+      "cast": "Ralph Fiennes, Isabella Rossellini, Toni Servillo, Fred Zinnemann, Simone Labarga, Alessandro Haber, Michele Placido, Giuseppe Cederna, Paolo Pierobon, Valeria Bilello",
+      "trailer": "https://youtu.be/JX9jasdi3ic?si=JPTvWHoxAI-MUT9r"
+    },
+    {
+      "id": "3",
+      "titulo": "The Brutalist",
+      "ano": 2025,
+      "genero": "Drama",
+      "poster": "imgs/brutalist1.png",
+      "descricao": "Arquiteto visionário foge da Europa pós-Segunda Guerra e chega aos Estados Unidos para reconstruir sua vida, carreira e casamento. Sozinho em um novo país, ele se estabelece na Pensilvânia, onde um rico e proeminente industrial reconhece seu talento.",
+      "diretor": "César González",
+      "cast": "Ricardo Darín, Érica Rivas, Valeria Bertuccelli, Juan Minujín, Ailín Salas, Carla Quevedo, Eugenia Suárez, Germán de Silva, Guillermo Arengo, Andrés Riva",
+      "trailer": "https://www.youtube.com/embed/GdRXPAHIEW4?si=jxPpQdM3Ir3xlfEq"
+    },
+    {
+      "id": "4",
+      "titulo": "Flow",
+      "ano": 2025,
+      "genero": "Animação/Aventura",
+      "poster": "imgs/flow.jpg",
+      "trailer": "https://www.youtube.com/embed/82WW9dVbglI?si=gduXNPXvU5RX9pVF",
+      "cast": "O filme é uma animação sem diálogos, portanto, não possui elenco de atores.",
+      "diretor": "Gints Zilbalodis",
+      "descricao": "O mundo parece estar chegando ao fim, com vários elementos no ar. A trama segue um grupo de personagens enquanto eles tentam sobreviver e se adaptar em meio ao caos global. O filme mistura drama e ficção científica, explorando os limites da natureza humana diante de uma crise mundial."
+    },
+    {
+      "id": "5",
+      "titulo": "Ainda Estou Aqui",
+      "ano": 2024,
+      "genero": "Drama",
+      "poster": "imgs/aindaestouaqui.jpg",
+      "trailer": "https://www.youtube.com/embed/_NzqP0jmk3o?si=7YwBJuUqEoPxQU6M",
+      "cast": "Fernanda Torres, Fernanda Montenegro, Selton Mello, Valentina Herszage, Maria Manoella, Luiza Kosovski, Cora Mora, Guilherme Silveira, Bárbara Luz, Marjorie Estiano, Eduardo Moscovis, Marcos Oliveira, Andréa Beltrão, Camila Márdila, Mariana Lima, Maria Carlota Bruno, Rodrigo Teixeira",
+      "diretor": "Walter Salles",
+      "descricao": "No início da década de 1970, o Brasil enfrenta o endurecimento da ditadura militar. No Rio de Janeiro, a família Paiva vive à beira da praia em uma casa de portas abertas para os amigos. Um dia, Rubens Paiva é levado por militares e desaparece. Eunice deve traçar um novo futuro para si e seus filhos."
+    },
+    {
+      "id": "6",
+      "titulo": "Pulp Fiction",
+      "ano": 1994,
+      "genero": "Ação/Drama",
+      "poster": "imgs/pulp.jpg",
+      "trailer": "https://www.youtube.com/embed/tGpTpVyI_OQ?si=tmYenelF4t4jL_OJ",
+      "cast": "John Travolta, Uma Thurman, Samuel L. Jackson, Bruce Willis, Ving Rhames, Harvey Keitel, Tim Roth, Amanda Plummer, Maria de Medeiros, Rosanna Arquette, Christopher Walken, Eric Stoltz, Quentin Tarantino",
+      "diretor": "Quentin Tarantino",
+      "descricao": "Pulp Fiction é um filme dirigido por Quentin Tarantino que entrelaça várias histórias envolvendo criminosos de Los Angeles, incluindo dois assassinos de aluguel, um boxeador, a esposa de um gângster e dois ladrões. A narrativa não linear e os diálogos marcantes fizeram dele um clássico do cinema moderno."
+    },
+    {
+      "id": "7",
+      "titulo": "Superbad",
+      "ano": 2007,
+      "genero": "Comédia",
+      "poster": "imgs/superbad.jpg",
+      "trailer": "https://www.youtube.com/embed/LvKvus3vCEY?si=E5_c-ZyFYZwRI6uO",
+      "cast": "Jonah Hill, Michael Cera, Seth Rogen, Bill Hader, Martha MacIsaac, Emma Stone, Christopher Mintz-Plasse, Aviva Baumann, David Krumholtz, Gregg Binkley",
+      "diretor": "Greg Mottola",
+      "descricao": "O filme é estrelado por Jonah Hill e Michael Cera como Seth e Evan, dois melhores amigos que embarcam em uma série de aventuras desastrosas enquanto tentam aproveitar sua última festa antes de se formarem no ensino médio."
+    },
+    {
+      "id": "8",
+      "titulo": "Parasita",
+      "ano": 2019,
+      "genero": "Drama",
+      "poster": "imgs/parasite.jpeg",
+      "trailer": "https://www.youtube.com/embed/isOGD_7hNIY?si=2raj3kdwBKmn-dOK",
+      "cast": "Song Kang-Ho, Lee Sun-Kyun, Cho Yeo-Jeong, Choi Woo-Shik, Park So-Dam, Jung Ji-Soon, Lee Jung-Eun, Jung Hyeon-Joong, Park Seo-Joon, Andreas Fronk",
+      "diretor": "Bong Joon-Ho",
+      "descricao": "Toda a família de Ki-taek está desempregada, vivendo em um porão sujo e apertado. Por obra do acaso, ele começa a dar aulas de inglês para uma garota de família rica. Fascinados com a vida luxuosa destas pessoas, pai, mãe e filhos bolam um plano para se infiltrar também na abastada família, um a um. No entanto, os segredos e mentiras necessários à ascensão social cobram o seu preço."
+    },
+    {
+      "id": "9",
+      "titulo": "Show de Truman",
+      "ano": 1998,
+      "genero": "Drama",
+      "poster": "imgs/truman.jpg",
+      "trailer": "https://www.youtube.com/embed/dlnmQbPGuls?si=ehJhe_aAke8_pEJx",
+      "cast": "Jim Carrey, Laura Linney, Natascha McElhone, Ed Harris, Noah Emmerich, Holland Taylor, Paul Giamatti, Peter Krause, Tony Todd, Harry Shearer, Philip Baker Hall, Philip Glass, Don Taylor, Marcia DeBonis, Yuji Okumoto, Terry Camilleri, Mal Jones, John Pleshette, Joel McKinnon Miller, Heidi Schanz, Joe Minjares, Antoni Corone, Marco Rubeo, David Andrew Nash",
+      "diretor": "Peter Weir",
+      "descricao": "Truman Burbank é um pacato vendedor de seguros que leva uma vida simples com sua esposa Meryl Burbank. Porém, algumas coisas ao seu redor fazem com que ele passe a estranhar sua cidade, seus supostos amigos e até sua mulher. Após conhecer a misteriosa Lauren, ele fica intrigado e acaba descobrindo que toda sua vida foi monitorada por câmeras e transmitida em rede nacional."
+    },
+    {
+      "id": "10",
+      "titulo": "Sociedade dos Poetas Mortos",
+      "ano": 1989,
+      "genero": "Comédia/Drama",
+      "poster": "imgs/dead.jpg",
+      "trailer": "https://www.youtube.com/embed/ye4KFyWu2do?si=owUxfrGvhmCEGYPQ",
+      "cast": "Robin Williams, Ethan Hawke, Robert Sean Leonard, Josh Charles, James Waterston, Lara Flynn Boyle, Norman Lloyd, Kurtwood Smith, George Martin, Melora Walters",
+      "diretor": "Peter Weir",
+      "descricao": "O novo professor de Inglês John Keating é introduzido a uma escola preparatória de meninos que é conhecida por suas antigas tradições e alto padrão. Ele usa métodos pouco ortodoxos para atingir seus alunos, que enfrentam enormes pressões de seus pais e da escola. Com a ajuda de Keating, os alunos Neil Perry, Todd Anderson e outros aprendem como não serem tão tímidos, seguir seus sonhos e aproveitar cada dia."
+    },
+    {
+      "id": "11",
+      "titulo": "The Batman",
+      "ano": 2022,
+      "genero": "Ação",
+      "poster": "imgs/batman.webp",
+      "trailer": "https://www.youtube.com/embed/mqqft2x_Aa4?si=FFM8WNU93UYyoxnU",
+      "cast": "Robert Pattinson, Zoë Kravitz, Colin Farrell, Paul Dano, Jeffrey Wright, Andy Serkis, John Turturro, Peter Sarsgaard, Barry Keoghan, Jayme Lawson, Gil Perez-Abraham",
+      "diretor": "Matt Reeves",
+      "descricao": "Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população."
+    },
+    {
+      "id": "12",
+      "titulo": "O Silêncio dos Inocentes",
+      "ano": 1991,
+      "genero": "Thriller",
+      "poster": "imgs/silencio.jpg",
+      "trailer": "https://www.youtube.com/embed/6iB21hsprAQ?si=ezOYqMtbCOY7JJ3q",
+      "cast": "Jodie Foster, Anthony Hopkins, Lawrence A. Bonney, Kasi Lemmons, Scott Glenn, Danny Darst, Diane Baker, Anthony Heald, Frankie Faison, Ted Levine, Tracey Walter",
+      "diretor": "Jonathan Demme",
+      "descricao": "A jovem e talentosa agente do FBI Clarice Starling recebe ajuda do encarcerado Dr. Hannibal Lecter, um psiquiatra brilhante e também um psicopata violento e canibal, para tentar encontrar um assassino em série conhecido como Buffalo Bill."
+    },
+    {
+      "id": "13",
+      "titulo": "Interestelar",
+      "ano": 2014,
+      "genero": "Ficção Científica, Drama",
+      "poster": "imgs/interestelar.jpg",
+      "trailer": "https://www.youtube.com/embed/zSWdZVtXT7E?si=eNnXA0DXqq7uDnMa",
+      "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine, Matt Damon, Mackenzie Foy, Topher Grace, John Lithgow, Ellen Burstyn, Casey Affleck",
+      "diretor": "Christopher Nolan",
+      "descricao": "As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar."
+    },
+    {
+      "id": "14",
+      "titulo": "Corra",
+      "ano": 2017,
+      "genero": "Terror",
+      "poster": "imgs/getout.jpg",
+      "trailer": "https://www.youtube.com/embed/DzfpyUB60YY?si=-4kjHNo1xuwCRTe3",
+      "cast": "Jordan Peele",
+      "diretor": "Daniel Kaluuya, Allison Williams, Bradley Whitford, Catherine Keener, Caleb Landry Jones, Stephen Root, Lil Rel Howery, Marcus Henderson, Betty Gabriel, Lakeith Stanfield",
+      "descricao": "Chris é um jovem fotógrafo negro que está prestes a conhecer os pais de Rose, sua namorada caucasiana. Na luxuosa propriedade dos pais dela, Chris percebe que a família esconde algo muito perturbador."
+    },
+    {
+      "id": "15",
+      "titulo": "Hereditário",
+      "ano": 2018,
+      "genero": "Terror",
+      "poster": "imgs/hereditario.jpg",
+      "trailer": "https://www.youtube.com/embed/V6wWKNij_1M?si=vLUt3cOmGrvIbWS4",
+      "cast": "Toni Collette, Alex Wolff, Milly Shapiro, Gabriel Byrne, Ann Dowd, Mark Duplass, Mallory Bechtel, Lachlan Watson, Christopher L. McCormick, Stephen McKinley Henderson",
+      "diretor": "Ari Aster",
+      "descricao": "Após a morte da reclusa avó, a família Graham começa a desvendar algumas coisas. Mesmo após a partida da matriarca, ela permanece como se fosse uma sombra sobre a família, especialmente sobre a solitária neta adolescente, Charlie, por quem ela sempre manteve uma fascinação não usual. Com um crescente terror tomando conta da casa, a família explora lugares mais escuros para escapar do infeliz destino que herdaram."
+    },
+    {
+      "id": "16",
+      "titulo": "La La Land",
+      "ano": 2016,
+      "genero": "MusicalRomance",
+      "poster": "imgs/la.webp",
+      "trailer": "https://www.youtube.com/embed/0pdqf4P9MB8?si=Wlg6-qCvVeXMQNQJ",
+      "cast": "Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt, Finn Wittrock, J.K. Simmons",
+      "diretor": "Damien Chazelle",
+      "descricao": "Em Los Angeles, a atriz iniciante Mia e o pianista de jazz Sebastian se encontram enquanto perseguem seus sonhos. Entre audições frustradas e shows em bares, eles se apaixonam e se inspiram mutuamente. Mas, à medida que suas carreiras começam a decolar, o amor entre eles é posto à prova pelos sacrifícios que cada um precisa fazer. 'La La Land' é uma celebração da música, do cinema clássico e das escolhas que moldam nossas vidas."
     }
   ]
 }

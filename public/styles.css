@@ -1,0 +1,46 @@
+.botaofavorito{
+    background-color:#495057;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+.botao{
+    background-color:#495057;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+.carousel-caption {
+    color: white;
+    text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+  }
+
+  .img-detalhe {
+    height: 400px;
+    object-fit: cover;
+}

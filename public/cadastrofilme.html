@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Filmes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center">
+                <img src="imgs/clack.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                Cesar :D
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cadastro_filme.html">Cadastrar Filmes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <h1>Cadastro de Filmes</h1>
+
+    <form id="form-filme" class="mb-5">
+        <input type="hidden" id="filme-id">
+        <div class="mb-3">
+            <label class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ano</label>
+            <input type="number" class="form-control" id="ano" required>
+      </div>
+        <div class="mb-3">
+            <label class="form-label">Gênero</label>
+            <input type="text" class="form-control" id="genero" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Diretor</label>
+            <input type="text" class="form-control" id="diretor">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Elenco</label>
+            <input type="text" class="form-control" id="elenco">
+        </div>
+        <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        <textarea class="form-control" id="descricao"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Poster</label>
+        <input type="url" class="form-control" id="poster">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Trailer (URL)</label>
+        <input type="url" class="form-control" id="trailer">
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar Filme</button>
+    </form>
+    <h2>Filmes Cadastrados</h2>
+    <table class="table" id="tabela-filmes">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer class="text-center bg-dark text-white py-4 border-top mt-5 pt-3">
+    <div class="container">
+      <h5 class="fw-bold">Informações do Aluno</h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-8">
+          <h6 class="text-primary">Sobre</h6>
+          <p>Meu site sobre filmes :D</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-info">Autoria</h6>
+          <div class="d-flex align-items-center mb-2">
+            <img src="imgs/eu.jpg" alt="eu" class="rounded-circle me-2" width="80" height="80">
+            <div>
+              <strong>Aluno:</strong> Cesar Júnior<br>
+              <strong>Curso:</strong> Sistemas da Informações<br>
+              <strong>Turma:</strong> Manhã
+            </div>
+          </div>
+          <p class="text-info fw-bold">Redes Sociais:</p>
+          <a href="https://www.facebook.com/roberto.dino.12720"><i class="bi bi-facebook fs-4 me-2"></i></a>
+          <a href="https://github.com/cesaarjrr"><i class="bi bi-github fs-4 me-2"></i></a>
+          <a href="https://x.com/cesaarjrr"><i class="bi bi-twitter fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <script src="cadastro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
