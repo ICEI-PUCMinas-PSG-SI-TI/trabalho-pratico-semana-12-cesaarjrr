@@ -5,21 +5,17 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
+- Nome: Cesar Rogério Lopes Júnior
+- Matricula: 894717
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
 
 **Print do testes da API com Postman ou similar**
 
-<<  COLOQUE A IMAGEM GET AQUI >>
-
-<<  COLOQUE A IMAGEM POST AQUI >>
-
-<<  COLOQUE A IMAGEM PUT AQUI >>
-
-<<  COLOQUE A IMAGEM DELETE AQUI >>
-
+<img src="get.png" alt="get">
+<img src="post.png" alt="post">
+<img src="put.png" alt="put">
+<img src="delete.png" alt="delete">
 **Print da aba NETWORK com requisições Fetch/XHR de POST**
 
 <<  COLOQUE A IMAGEM AQUI >>
