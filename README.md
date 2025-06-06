@@ -40,6 +40,8 @@ Nesse projeto você vai encontrar a seguinte estrutura base:
 * **Pasta node_modules**
   Local onde ficam os pacotes dos quais o projeto depende. Evite enviar essa pasta para o repositório remoto. Essa pasta é reconstruída toda vez que se executa o comando `npm install`.
 
+  Finalizado!!!
+
 **Ambiente de Desenvolvimento (IMPORTANTE)**
 
 > A partir de agora, **NÃO utilizamos mais o LiveServer/FiveServer** durante o processo de desenvolvimento. O próprio JSONServer faz o papel de servidor.
