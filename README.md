@@ -21,6 +21,8 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ![Fetch/XHR](fetchxhr.png)
 
+mudado
+
 
 ## **Orientações Gerais**
 
